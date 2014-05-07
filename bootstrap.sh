@@ -1,8 +1,22 @@
 #!/usr/bin/env bash
 
-apt-get update
-apt-get install tmux
-apt-get install git
+# some constants
+userPath=/home/vagrant
+nodeVersion=0.10
 
-ln -s /vagrant/bash_profile ~/.bash_profile
-ln -s /vagrant/tmux.conf ~/.tmux.conf
+# install necessary programs
+apt-get update
+apt-get -y install tmux
+apt-get -y install git
+apt-get -y install curl
+apt-get -y install make
+apt-get -y install vim
+
+# install nvm and node
+git clone git://github.com/creationix/nvm.git "$userPath/.nvm"
+source  "$userPath/.nvm/nvm.sh"
+nvm install $nodeVersion
+
+# link bash profile and tmux config
+ln -s /vagrant/bash_profile "$userPath/.bash_profile"
+ln -s /vagrant/tmux.conf  "$userPath/.tmux.conf"
