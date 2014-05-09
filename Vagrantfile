@@ -16,18 +16,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # doesn't already exist on the user's system.
    config.vm.box_url = "http://files.vagrantup.com/precise32.box"
 
-  # Create a forwarded port mapping which allows access to a specific port
-  # within the machine from a port on the host machine. In the example below,
-  # accessing "localhost:8080" will access port 80 on the guest machine.
-  config.vm.network :forwarded_port, guest: 8888, host: 8888 # PILVI
-  config.vm.network :forwarded_port, guest: 8080, host: 8080 # SNS
-  config.vm.network :forwarded_port, guest: 8081, host: 8081 # Catalog API
-
-  # used for browser-sync
-  config.vm.network :forwarded_port, guest: 3000, host: 3000
-  config.vm.network :forwarded_port, guest: 3001, host: 3001
-  config.vm.network :forwarded_port, guest: 3002, host: 3002
-
   # use bootstrap.sh for provision
   config.vm.provision :shell, :path => "bootstrap.sh"
 
