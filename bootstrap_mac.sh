@@ -42,5 +42,6 @@ sudo rm -rf "$SUBLIME/User/" #remove existing user folder
 sudo ln -s "$PWD/sublime_user/" "$SUBLIME/User" # link user folder from here
 #download packge control to Installed Packages
 sudo curl -o "$SUBLIME/../Installed Packages/Package Control.sublime-package" 'http://sublime.wbond.net/Package Control.sublime-package'
+sudo git clone git@github.com:mupat/Theme-Brackets.git "$SUBLIME/Theme - Brackets"
 
 echo "${GREEN}done${NC}"
