@@ -1,5 +1,6 @@
 .vagrant
 repos/
+svn_repos/
 mupat/
 sublime_user/Package Control.cache/
 sublime_user/Package Control.last-run
