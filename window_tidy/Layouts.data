@@ -286,7 +286,7 @@
 		</dict>
 	</array>
 	<key>NumUses</key>
-	<integer>4</integer>
+	<integer>45</integer>
 	<key>OptionButton</key>
 	<integer>2</integer>
 	<key>QuickLayoutGridX</key>
@@ -310,6 +310,6 @@
 	<key>ShowWelcome</key>
 	<false/>
 	<key>Tab</key>
-	<integer>1</integer>
+	<integer>0</integer>
 </dict>
 </plist>
