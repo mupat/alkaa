@@ -13,10 +13,15 @@ echo "${GREEN}set bash_profile${NC}"
 rm "$HOME/.bash_profile"
 ln -s "$PWD/bash_profile" "$HOME/.bash_profile"
 
-#set tmxu config from repo
+#set tmux config from repo
 echo "${GREEN}set tmux config${NC}"
 rm "$HOME/.tmux.conf"
 ln -s "$PWD/tmux.conf" "$HOME/.tmux.conf"
+
+#set git config
+echo "${GREEN}set git config${NC}"
+rm "$HOME/.gitconfig"
+ln -s "$PWD/gitconfig" "$HOME/.gitconfig"
 
 #install homebrew
 echo "${GREEN}install homebrew${NC}"

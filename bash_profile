@@ -10,6 +10,7 @@ export TERM=xterm-256color
 
 # set aliases
 alias e=exit
+alias g=git
 
 # start tmux
 if [ -z "$TMUX" ]; then # if tmux isnt running, start it
