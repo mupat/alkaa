@@ -1,6 +1,8 @@
 [user]
   name = Patrick Müller
   email = dev@mupat.net
+[push]
+  default = simple
 [alias]
   lg = log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short
   ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
