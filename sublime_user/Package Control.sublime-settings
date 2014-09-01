@@ -1,8 +1,17 @@
 {
 	"installed_packages":
 	[
+		"Case Conversion",
 		"CoffeeScript",
+		"Handlebars",
+		"Jade",
 		"LESS",
-		"Package Control"
+		"Package Control",
+		"Pretty JSON",
+		"Sass",
+		"sublimelint",
+		"Theme - amCoder",
+		"Theme - Soda",
+		"Tomorrow Color Schemes"
 	]
 }
