@@ -285,8 +285,10 @@
 			<integer>1024</integer>
 		</dict>
 	</array>
+	<key>NumRequests</key>
+	<integer>1</integer>
 	<key>NumUses</key>
-	<integer>67</integer>
+	<integer>0</integer>
 	<key>OptionButton</key>
 	<integer>2</integer>
 	<key>QuickLayoutGridX</key>
@@ -298,6 +300,8 @@
 	<key>QuickLayoutKeyFlags</key>
 	<integer>0</integer>
 	<key>QuickLayoutNearMouse</key>
+	<false/>
+	<key>RatingReminder</key>
 	<false/>
 	<key>RestoreWindows</key>
 	<false/>
