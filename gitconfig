@@ -1,6 +1,6 @@
 [user]
-  name = Patrick Müller
-  email = dev@mupat.net
+  email = patrick.mueller@blackbridge.com
+  name = Patrick
 [push]
   default = simple
 [alias]
@@ -18,4 +18,5 @@
   aa = add --all
   dc = diff --cached
   pu = push
+  alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
   pl = pull
