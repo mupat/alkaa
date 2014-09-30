@@ -12,6 +12,9 @@ export TERM=xterm-256color
 alias e=exit
 alias g=git
 alias m=make
+alias c=clear
+alias la="ls -laht"
+alias rb="source ~/.bash_profile"
 
 # start tmux
 if [ -z "$TMUX" ]; then # if tmux isnt running, start it
