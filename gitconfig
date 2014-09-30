@@ -12,11 +12,18 @@
   cl = clone
   ci = commit
   co = checkout
+  cod = checkout develop
   br = branch 
   df = diff
   a = add
   aa = add --all
   dc = diff --cached
   pu = push
+  puu = push -u origin
   alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
   pl = pull
+  re = remote
+  f = fetch
+  fa = fetch --all
+  m = merge
+  md = merge origin/develop
