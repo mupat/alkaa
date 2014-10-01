@@ -19,4 +19,5 @@ nvm install $nodeVersion
 
 # link bash profile and tmux config
 ln -s /vagrant/bash_profile "$userPath/.bash_profile"
+ln -s /vagrant/aliases "$userPath/.aliases"
 ln -s /vagrant/tmux.conf  "$userPath/.tmux.conf"
