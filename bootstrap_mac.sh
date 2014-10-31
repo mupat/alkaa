@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#deactivate cloud sync with unsaved documents
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
 ### variables
 APP=$HOME/Library/Application\ Support
 SUBLIME=$APP/Sublime\ Text\ 2/Packages
