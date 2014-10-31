@@ -27,3 +27,8 @@
   fa = fetch --all
   m = merge
   md = merge origin/develop
+  ce = config user.email
+  cu = config user.name
+  ta = tag -a
+  t = tag
+  put = push origin 
