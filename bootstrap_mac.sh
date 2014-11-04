@@ -1,4 +1,7 @@
-#!/bin/sh 
+#!/bin/bash
+
+#deactivate cloud sync with unsaved documents
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 ### variables
 APP=$HOME/Library/Application\ Support
@@ -12,6 +15,11 @@ NC="\x1B[0m"
 echo "${GREEN}set bash_profile${NC}"
 rm "$HOME/.bash_profile"
 ln -s "$PWD/bash_profile" "$HOME/.bash_profile"
+
+#set aliases from repo
+echo "${GREEN}set aliases${NC}"
+rm "$HOME/.aliases"
+ln -s "$PWD/aliases" "$HOME/.aliases"
 
 #set tmux config from repo
 echo "${GREEN}set tmux config${NC}"

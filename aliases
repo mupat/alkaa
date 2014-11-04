@@ -1,0 +1,9 @@
+#!/bin/bash
+# set aliases
+alias e=exit
+alias g=git
+alias m=make
+alias c=clear
+alias la="ls -laht"
+alias rb="source ~/.bash_profile"
+alias ps="ps aux | grep --color"
