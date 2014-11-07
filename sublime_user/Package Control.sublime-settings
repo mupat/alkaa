@@ -1,15 +1,18 @@
 {
 	"installed_packages":
 	[
+		"BracketHighlighter",
 		"Case Conversion",
 		"CoffeeScript",
+		"DocBlockr",
+		"GitGutter",
 		"Handlebars",
 		"Jade",
 		"LESS",
 		"Package Control",
 		"Pretty JSON",
 		"Sass",
-		"sublimelint",
+		"SublimeGit",
 		"Theme - amCoder",
 		"Theme - Soda",
 		"Tomorrow Color Schemes"
