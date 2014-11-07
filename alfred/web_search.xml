@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>05EE7A29-634E-4193-B567-49C282A4763D</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>gde</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>google de -&gt; en</string>
+			<key>url</key>
+			<string>https://translate.google.de/#de/en/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>34D488F9-4BED-424F-85C5-B25241001BA8</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>ged</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>google en -&gt; de</string>
+			<key>url</key>
+			<string>https://translate.google.de/#en/de/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>538D43F8-9ACC-4653-888A-F1206CEAD33A</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>bo</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>bower</string>
+			<key>url</key>
+			<string>http://bower.io/search/?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>A382FC3A-8714-4412-8B26-1D4EDEA31B56</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>gh</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>github</string>
+			<key>url</key>
+			<string>https://github.com/search?utf8=✓&amp;q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>C5AEAD0C-DDFE-4A7E-A866-74A7CE89E6A7</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>npm</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>NPM</string>
+			<key>url</key>
+			<string>https://www.npmjs.org/search?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
