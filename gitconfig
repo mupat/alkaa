@@ -32,3 +32,4 @@
   ta = tag -a
   t = tag
   put = push origin 
+  rh = reset --hard
