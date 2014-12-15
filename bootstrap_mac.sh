@@ -1,41 +1,33 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-SCRIPTS=$DIR/scripts
-source $SCRIPTS/_config.sh #load config
+SCRIPTS=$DIR/_scripts
+source $DIR/_helper.sh #load helper
 
-# just ask if all stuff is there
-cecho "Sublime Text2, Atom Editor, Window Tidy, Alfred 2" $CYAN
-prompt "Installed base programs and closed them?"
-answerYesNo "" "exit 0"
-
-prompt "bootstrap sublime text 2?"
-answerYesNo "source $SCRIPTS/sublime_text2.sh" "cecho skipping $GREY"
-
-prompt "install homebrew and related programs?"
+prompt "install homebrew?"
 answerYesNo "source $SCRIPTS/homebrew.sh" "cecho skipping $GREY"
 
-prompt "set window tidy config?"
-answerYesNo "source $SCRIPTS/window_tody.sh" "cecho skipping $GREY"
+readCaskTasks
+prompt "install cask stuff (${tasks[*]})?"
+answerYesNo "source $SCRIPTS/cask.sh" "cecho skipping $GREY"
 
 prompt "install nodeJS?"
 answerYesNo "source $SCRIPTS/node.sh" "cecho skipping $GREY"
 
-prompt "bootstrap atom editor"
-answerYesNo "source $SCRIPTS/atom.sh" "cecho skipping $GREY"
-
-prompt "bootstrap alfred"
-answerYesNo "source $SCRIPTS/Alfred.sh" "cecho skipping $GREY"
-
-echo ""
-echo ""
+prompt "install tmux?"
+answerYesNo "source $SCRIPTS/tmux.sh" "cecho skipping $GREY"
 
 #set aliases from repo
 link "$DIR/aliases" "$HOME/.aliases"
 link "$DIR/bash_profile" "$HOME/.bash_profile"
-link "$DIR/tmux.conf" "$HOME/.tmux.conf"
 link "$DIR/gitconfig" "$HOME/.gitconfig"
+
+echo ""
 
 #deactivate cloud sync with unsaved documents
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+cecho "deactivated cloud sync for non saved files" $GREEN
+
+echo ""
+echo ""
 
 cecho "done" $GREEN

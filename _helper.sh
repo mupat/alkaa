@@ -1,7 +1,10 @@
 #!/bin/bash
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 ### variables
-APP=$HOME/Library/Application\ Support
+LIBRARY=$HOME/Library/
+APP=$LIBRARY/Application\ Support
+PREFERENCES=$LIBRARY/Preferences
 
 # colors
 CYAN='\033[0;36m'
@@ -11,6 +14,10 @@ GREY='\033[1;30m'
 NC="\033[0;0m"
 
 ### methods
+
+readCaskTasks() {
+  IFS=$'\n' read -d '' -r -a tasks < $DIR/cask_tasks # read list of all apps 
+}
 
 # Colored echo
 # arg $1 = message
