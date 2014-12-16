@@ -3,7 +3,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $DIR/../_helper.sh #load helper
 
 loop() {
-  readCaskTasks # read cask tasks as array
+  readCaskTasks $DIR/../cask_tasks # read cask tasks as array
   for task in "${tasks[@]}" # loop through array
   do
     # check if we need to ask to install this task
@@ -18,7 +18,7 @@ loop() {
     
     # check if we have a bootstrap script, that need to run
     if [ -f $DIR/../$task/_bootstrap.sh ]; then
-       $DIR/../$task/_bootstrap.sh
+      source $DIR/../$task/_bootstrap.sh
     fi
   done
 }
