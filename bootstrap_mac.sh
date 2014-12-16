@@ -6,7 +6,7 @@ source $DIR/_helper.sh #load helper
 prompt "install homebrew?"
 answerYesNo "source $SCRIPTS/homebrew.sh" "cecho skipping $GREY"
 
-readCaskTasks
+readCaskTasks $DIR/cask_tasks
 prompt "install cask stuff (${tasks[*]})?"
 answerYesNo "source $SCRIPTS/cask.sh" "cecho skipping $GREY"
 
