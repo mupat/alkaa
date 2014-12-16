@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ### variables
-LIBRARY=$HOME/Library/
+LIBRARY=$HOME/Library
 APP=$LIBRARY/Application\ Support
 PREFERENCES=$LIBRARY/Preferences
 
