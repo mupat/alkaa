@@ -1,5 +1,5 @@
 #!/bin/bash
-source "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/_helper.sh" #load helper
+source "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../_helper.sh" #load helper
 
 #install tmux
 cecho "install tmux" $GREEN
