@@ -1,5 +1,4 @@
 #!/bin/bash
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 ### variables
 LIBRARY=$HOME/Library/
@@ -16,7 +15,7 @@ NC="\033[0;0m"
 ### methods
 
 readCaskTasks() {
-  IFS=$'\n' read -d '' -r -a tasks < $DIR/cask_tasks # read list of all apps 
+  IFS=$'\n' read -d '' -r -a tasks < $1 # read list of all apps 
 }
 
 # Colored echo
