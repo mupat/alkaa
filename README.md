@@ -1,5 +1,5 @@
 #dev environment
-Repo to easily bootstrap an mac or a vagrant box(currently ubuntu).
+Repo to easily bootstrap a mac or a vagrant box(currently ubuntu).
 
 ## use on mac
 ```
