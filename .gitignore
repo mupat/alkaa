@@ -1,10 +1,6 @@
 .vagrant
-repos/
-svn_repos/
-mupat/
-blackbridge/
-fdrei/
-sublime_user/Package Control.cache/
-sublime_user/Package Control.last-run
-sublime_user/Package Control.system-ca-bundle
-sublime_user/bh_unicode_properties.cache
+/**/*.DS_Store
+sublime-text/user/Package Control.cache/
+sublime-text/user/Package Control.last-run
+sublime-text/user/Package Control.system-ca-bundle
+sublime-text/user/bh_unicode_properties.cache
