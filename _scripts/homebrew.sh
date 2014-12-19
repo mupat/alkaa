@@ -1,11 +1,14 @@
 #!/bin/bash
 source "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/_helper.sh" #load helper
 
+xcode-select --install # make sure xcode command line tools are installed
+prompt "xcode installation finished?"
+answerYesNo "" "exit 0"
+
 #install homebrew
 cecho "install homebrew" $GREEN
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
-xcode-select --install # make sure xcode command line tools are installed
 
 #install cask
 cecho "install homebrew cask" $GREEN

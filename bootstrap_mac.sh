@@ -16,6 +16,7 @@ answerYesNo "source $SCRIPTS/node.sh" "cecho skipping $GREY"
 prompt "install tmux?"
 answerYesNo "source $SCRIPTS/tmux.sh" "cecho skipping $GREY"
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # make sure we have the correct DIR
 #set aliases from repo
 link "$DIR/aliases" "$HOME/.aliases"
 link "$DIR/bash_profile" "$HOME/.bash_profile"

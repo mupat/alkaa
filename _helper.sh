@@ -58,14 +58,3 @@ link() {
   mkdir -p "$(dirname "$2")" # create folder structure if necessary
   ln -s "$1" "$2" # link source
 }
-
-# sudo symlink a file
-# arg $1 = source
-# arg $2 = target
-slink() {
-  echo ""
-  cecho "set ${1} -> ${2}" $GREEN # hint in cli
-  sudo rm -rf "${2}" # remove existing stuff
-  sudo mkdir -p "$(dirname "$2")" # create folder structure if necessary
-  sudo ln -s "${1}" "${2}" # link source
-}
