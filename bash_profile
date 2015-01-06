@@ -12,7 +12,7 @@ git_email() {
 }
 
 # define prefix color and text
-export PS1="\[\e[0m\][\[\e[1;36m\]\w\[\e[0m\]] \[\e[1;30m\]\$(parse_git_branch)\[\e[0m\]-> "
+export PS1="\[\e[0m\][\[\e[1;36m\]\w\[\e[0m\]]\[\e[1;30m\]\$(parse_git_branch)\[\e[0m\]-> "
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export TERM=xterm-256color
