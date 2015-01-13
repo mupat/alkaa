@@ -1,6 +1,5 @@
 {
 	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow.tmTheme",
-	"theme": "Brackets.sublime-theme",
 	"file_exclude_patterns":
 	[
 	],
@@ -18,6 +17,7 @@
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
 	"tab_size": 2,
+	"theme": "Brackets.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"use_tab_stops": false
 }

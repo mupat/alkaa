@@ -1,14 +1,17 @@
-'global':
+'*':
   'editor':
-    'fontSize': 13
     'fontFamily': 'SourceCodePro-Light'
+    'fontSize': 13
     'invisibles': {}
   'core':
-    'projectHome': '/Users/pam/dev'
+    'disabledPackages': [
+      'autocomplete'
+    ]
     'themes': [
       'unity-ui'
       'atom-light-syntax'
     ]
+    'projectHome': '/Users/pam/dev'
   'exception-reporting':
     'userId': '3dc13132-932a-76a1-c309-867c8f5d42bc'
   'welcome':
@@ -22,3 +25,7 @@
     'enableHighlight': true
   'custom-title':
     'template': 'test'
+  'autocomplete-plus':
+    'confirmCompletion': 'tab and enter'
+  'tree-view':
+    'hideVcsIgnoredFiles': true
