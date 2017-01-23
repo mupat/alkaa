@@ -1,31 +1,119 @@
-'*':
-  'editor':
-    'fontFamily': 'SourceCodePro-Light'
-    'fontSize': 13
-    'invisibles': {}
-  'core':
-    'disabledPackages': [
-      'autocomplete'
+"*":
+  "atom-typescript": {}
+  autocomplete:
+    includeCompletionsFromAllBuffers: true
+  "autocomplete-plus":
+    confirmCompletion: "enter"
+    suggestionListFollows: "Word"
+  "character-table": {}
+  core:
+    audioBeep: false
+    disabledPackages: [
+      "autocomplete"
+      "open-last-project"
+      "tree-view-breadcrumb"
+      "tree-view-finder"
+      "chary-tree-view"
+      "sublime-tabs"
+      "linter-csslint"
+      "linter"
+      "linter-coffeelint"
+      "linter-jshint"
+      "linter-less"
+      "language-lsg"
+      "es-identifier-highlight"
+      "language-javascript-better"
+      "linter-docker"
+      "merge-conflicts"
+      "quick-editor"
     ]
-    'themes': [
-      'unity-ui'
-      'atom-light-syntax'
+    excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "logs/"
+      "tmp/"
+      "temp/"
+      "coverage/"
+      "*.log"
+      ".sass-cache"
+      "node_modules"
     ]
-    'projectHome': '/Users/pam/dev'
-  'exception-reporting':
-    'userId': '3dc13132-932a-76a1-c309-867c8f5d42bc'
-  'welcome':
-    'showOnStartup': false
-  'metrics':
-    'userId': '897829d3e418664ed04ea4795d423ce36630627f'
-  'autocomplete':
-    'includeCompletionsFromAllBuffers': true
-  'highlight-column':
-    'opacity': 0.15
-    'enableHighlight': true
-  'custom-title':
-    'template': 'test'
-  'autocomplete-plus':
-    'confirmCompletion': 'tab and enter'
-  'tree-view':
-    'hideVcsIgnoredFiles': true
+    projectHome: "/Users/pam/dev"
+    telemetryConsent: "no"
+    themes: [
+      "unity-ui"
+      "atom-light-syntax"
+    ]
+  "custom-title":
+    template: "test"
+  editor:
+    fontFamily: "SourceCodePro-Light"
+    fontSize: 16
+    invisibles: {}
+    showInvisibles: true
+    softWrap: true
+    softWrapHangingIndent: 6
+  "exception-reporting":
+    userId: "3dc13132-932a-76a1-c309-867c8f5d42bc"
+  "highlight-column":
+    enableHighlight: true
+    opacity: 0.15
+  linter: {}
+  "merge-conflicts": {}
+  metrics:
+    userId: "897829d3e418664ed04ea4795d423ce36630627f"
+  pigments:
+    ignoredScopes: [
+      "\\.comment"
+      "\\.string"
+    ]
+    markerType: "dot"
+    supportedFiletypes: [
+      "***/*.styl"
+      "**/*.stylus"
+      "**/*.less"
+      "**/*.sass"
+      "**/*.scss"
+      "**/*.css"
+    ]
+  "quick-editor": {}
+  tabs:
+    showIcons: true
+  "todo-show": {}
+  "tree-view":
+    hideVcsIgnoredFiles: false
+  "unity-ui": {}
+  welcome:
+    showOnStartup: false
+".attribute-values.js.jsx.source":
+  editor:
+    softWrapHangingIndent: 6
+".js.jsx.react.source":
+  editor:
+    softWrapHangingIndent: 6
+".js.jsx.source":
+  editor:
+    softWrapHangingIndent: 6
+".js.regexp.replacement.source":
+  editor:
+    softWrapHangingIndent: 6
+".js.regexp.source":
+  editor:
+    softWrapHangingIndent: 6
+".js.source":
+  editor:
+    softWrapHangingIndent: 6
+".js.source.subtlegradient":
+  editor:
+    softWrapHangingIndent: 6
+".source.ts":
+  editor:
+    softWrapHangingIndent: 6
+".source.tsx":
+  editor:
+    softWrapHangingIndent: 6

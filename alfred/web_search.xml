@@ -49,6 +49,21 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>615F2313-1D4E-48B8-9886-82E84F47ADEC</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>ciu</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>can i use</string>
+			<key>url</key>
+			<string>http://caniuse.com/#search={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>A382FC3A-8714-4412-8B26-1D4EDEA31B56</key>
 		<dict>
 			<key>enabled</key>

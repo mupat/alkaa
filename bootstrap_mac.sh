@@ -31,6 +31,10 @@ echo ""
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 cecho "deactivated cloud sync for non saved files" $GREEN
 
+#deactivate auto open of apples photo app
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
+cecho "deactivated auto open of photo app" $GREEN
+
 echo ""
 echo ""
 

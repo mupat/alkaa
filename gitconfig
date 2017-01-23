@@ -13,23 +13,33 @@
   ci = commit
   co = checkout
   cod = checkout develop
-  br = branch 
+  br = branch
+  bra = branch --all
   df = diff
+  dc = diff --cached
   a = add
   aa = add --all
-  dc = diff --cached
   pu = push
   puu = push -u origin
-  alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+  put = push origin
   pl = pull
   re = remote
   f = fetch
   fa = fetch --all
   m = merge
-  md = merge origin/develop
+  mod = merge origin/develop
+  mud = merge upstream/develop
   ce = config user.email
   cu = config user.name
   ta = tag -a
   t = tag
-  put = push origin 
+  tl = describe --tags
   rh = reset --hard
+  cleanup = ! git branch --merged develop | egrep -v 'develop$' | xargs git branch -d
+  alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[credential]
+	helper = osxkeychain

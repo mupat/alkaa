@@ -15,3 +15,6 @@ cecho "install homebrew cask" $GREEN
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions # able to install other versions of existing casks
 brew tap caskroom/fonts  # install system fonts
+
+cecho "install actual git version" $GREEN
+brew install git
