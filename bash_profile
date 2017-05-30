@@ -27,11 +27,11 @@ if [ -f ~/.aliases ]; then
    source ~/.aliases
 fi
 
-activate nvm and show current used node version
+# activate nvm and show current used node version
 source ~/.nvm/nvm.sh
 echo -e "\033[1;30mUsed node version\033[0;0m: \033[0;36m$(nvm current)\033[0;0m"
 
-activate rvm and show current used ruby version
+# activate rvm and show current used ruby version
 source ~/.rvm/scripts/rvm
 echo -e "\033[1;30mUsed ruby version\033[0;0m: \033[0;36m$(ruby -v)\033[0;0m"
 
@@ -46,3 +46,4 @@ export BUNDLER_EDITOR="atom"
 # export ANDROID_HOME=/usr/local/Cellar/android-sdk/24.4.1/
 #
 # export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH="/usr/local/opt/openssl/bin:$PATH"
