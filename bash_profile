@@ -27,13 +27,16 @@ if [ -f ~/.aliases ]; then
    source ~/.aliases
 fi
 
+# add current working directory as title to iterm
+echo -ne "\033];$PWD\007"
+
 # activate nvm and show current used node version
 source ~/.nvm/nvm.sh
 echo -e "\033[1;30mUsed node version\033[0;0m: \033[0;36m$(nvm current)\033[0;0m"
 
 # activate rvm and show current used ruby version
-source ~/.rvm/scripts/rvm
-echo -e "\033[1;30mUsed ruby version\033[0;0m: \033[0;36m$(ruby -v)\033[0;0m"
+#source ~/.rvm/scripts/rvm
+#echo -e "\033[1;30mUsed ruby version\033[0;0m: \033[0;36m$(ruby -v)\033[0;0m"
 
 # show configured git user
 echo -e "Working as \033[0;36m$(git_user)\033[0;0m[\033[1;30m$(git_email)\033[0;0m]"
@@ -41,7 +44,7 @@ echo -e "Working as \033[0;36m$(git_user)\033[0;0m[\033[1;30m$(git_email)\033[0;
 ### Added by the Heroku Toolbelt
 # export PATH="/usr/local/heroku/bin:$PATH"
 
-export BUNDLER_EDITOR="atom"
+# export BUNDLER_EDITOR="atom"
 #
 # export ANDROID_HOME=/usr/local/Cellar/android-sdk/24.4.1/
 #

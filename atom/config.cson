@@ -16,10 +16,8 @@
       "chary-tree-view"
       "sublime-tabs"
       "linter-csslint"
-      "linter"
       "linter-coffeelint"
       "linter-jshint"
-      "linter-less"
       "language-lsg"
       "es-identifier-highlight"
       "language-javascript-better"
@@ -28,6 +26,7 @@
       "quick-editor"
       "language-javascript-jsx"
       "linter-spell"
+      "fast-eslint"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -45,8 +44,8 @@
       ".sass-cache"
       "node_modules"
       "vendor/"
+      "dist/"
     ]
-    projectHome: "/Users/pam/dev"
     telemetryConsent: "no"
     themes: [
       "unity-ui"
@@ -56,21 +55,26 @@
     template: "test"
   editor:
     fontFamily: "SourceCodePro-Light"
-    fontSize: 16
+    fontSize: 18
     invisibles: {}
+    preferredLineLength: 100
     showInvisibles: true
     softWrap: true
     softWrapHangingIndent: 6
   "exception-reporting":
     userId: "3dc13132-932a-76a1-c309-867c8f5d42bc"
+  "flow-ide": {}
   "highlight-column":
     enableHighlight: true
     opacity: 0.15
   linter: {}
+  "linter-ui-default":
+    panelHeight: 75
   "merge-conflicts": {}
   metrics:
     userId: "897829d3e418664ed04ea4795d423ce36630627f"
   pigments:
+    extendAutocompleteToColorValue: true
     ignoredScopes: [
       "\\.comment"
       "\\.string"

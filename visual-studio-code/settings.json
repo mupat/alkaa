@@ -1,0 +1,17 @@
+{
+    "editor.fontSize": 14,
+    "editor.fontFamily": "SourceCodePro-Medium",
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.rulers": [100],
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 100,
+    "editor.accessibilitySupport": "off",
+    "terminal.external.osxExec": "iTerm.app",
+    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.fontFamily": "SourceCodePro-Light",
+    "flow.useNPMPackagedFlow": true
+}
