@@ -7,11 +7,32 @@
     "editor.rulers": [100],
     "editor.minimap.enabled": false,
     "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 100,
+    "editor.wordWrapColumn": 500,
     "editor.accessibilitySupport": "off",
     "terminal.external.osxExec": "iTerm.app",
     "workbench.colorTheme": "Visual Studio Light",
     "workbench.startupEditor": "newUntitledFile",
     "terminal.integrated.fontFamily": "SourceCodePro-Light",
-    "flow.useNPMPackagedFlow": true
+    "flow.useNPMPackagedFlow": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "dist/**/*": true,
+        "coverage/**/*": true
+    },
+    "extensions.ignoreRecommendations": true,
+    "window.zoomLevel": 0,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    }
 }

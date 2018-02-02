@@ -5,14 +5,14 @@
   default = simple
 [alias]
   branch-name = "!git rev-parse --abbrev-ref HEAD"
-  remote-weburl = "!git remote -v | grep origin | grep fetch | awk '{print $2}' | sed 's/git@/https:\\/\\//' | sed 's/com:/com\\//'"
+  remote-weburl = "!git remote -v | grep origin | grep fetch | awk '{print $2}' | sed 's/git@/https:\\/\\//' | sed 's/com:/com\\//' | sed 's/\\.git//'"
 	deleteable-branches = "!git branch -vv | grep -v '*' | grep ': gone]' | awk '{print $1}'"
   lg = log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short
   ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
   ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
   history = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
   cp = cherry-pick
-  st = status -s
+  stt = "!git status -s | while read -n2 mode; read -n1; read file; do echo $mode $(date -r $file +\"%Y-%m-%d %H:%M:%S\") $file; done| sort -r"
   cl = clone
   ci = commit
   co = checkout
@@ -27,9 +27,8 @@
   a = add
   aa = add --all
   pu = push
-  puu = push -u origin
   puuc = "!git push -u origin $(git branch-name)"
-  put = push origin --tags
+  put = "!git push && git push --tags"
   pl = pull
   re = remote
   f = fetch
@@ -44,15 +43,21 @@
   t = tag
   tl = ! git tag --sort='version:refname' | tail -1
   rh = reset --hard
+  st = status -s
   squash = "!git rebase -i $(git merge-base $(git branch-name) origin/master)"
   rb = rebase master
   cleanup = "!git fp && $(git deleteable-branches | xargs -n 1 git branch -d)"
   cleanup-force = "!git fp && $(git deleteable-branches | xargs -n 1 git branch -D)"
   alias = "!git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /"
   open = "!open $(git remote-weburl)"
+  pr = "!open $(git remote-weburl)/compare/$(git branch-name)"
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
 [credential]
 	helper = osxkeychain
+[color]
+	ui = auto
+[rerere]
+	enabled = true

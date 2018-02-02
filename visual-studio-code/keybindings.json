@@ -5,20 +5,23 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "shift+alt+down",
-    "command": "-editor.action.copyLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "shift+cmd+h",
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
-    "key": "ctrl+`",
-    "command": "-workbench.action.terminal.toggleTerminal"
-  },
-  {
     "key": "cmd+h",
     "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "shift+cmd+\\",
+    "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  {
+    "key": "cmd+\\",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.quickOpen"
   }
 ]
