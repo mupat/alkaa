@@ -6,5 +6,5 @@ cecho "install rvm" $GREEN
 \curl -sSL https://get.rvm.io | bash
 source $HOME/.rvm/scripts/rvm
 
-rvm install stable # install latest stable version
-rvm use stable --default # use latest stable version
+rvm install ruby --latest # install latest stable version
+rvm use --latest # use latest stable version
