@@ -32,6 +32,7 @@ echo -ne "\033];$PWD\007"
 
 # activate nvm and show current used node version
 source ~/.nvm/nvm.sh
+nvm use --lts
 echo -e "\033[1;30mUsed node version\033[0;0m: \033[0;36m$(nvm current)\033[0;0m"
 
 # activate rvm and show current used ruby version
