@@ -21,6 +21,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # make sure we have the 
 link "$DIR/aliases" "$HOME/.aliases"
 link "$DIR/bash_profile" "$HOME/.bash_profile"
 link "$DIR/gitconfig" "$HOME/.gitconfig"
+link "$DIR/hyper_config.js" "$HOME/.hyper.js"
+link "$DIR/zshrc" "$HOME/.zshrc"
 
 echo ""
 

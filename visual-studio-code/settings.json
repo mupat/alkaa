@@ -3,14 +3,14 @@
     "editor.fontFamily": "SourceCodePro-Medium",
     "editor.tabSize": 2,
     "editor.renderWhitespace": "boundary",
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.rulers": [100],
+    "editor.multiCursorModifier": "alt",
+    "editor.rulers": [100, 120],
     "editor.minimap.enabled": false,
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 500,
     "editor.accessibilitySupport": "off",
     "terminal.external.osxExec": "iTerm.app",
-    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.colorTheme": "A",
     "workbench.startupEditor": "newUntitledFile",
     "terminal.integrated.fontFamily": "SourceCodePro-Light",
     "flow.useNPMPackagedFlow": true,
@@ -24,13 +24,11 @@
     "extensions.ignoreRecommendations": true,
     "window.zoomLevel": 0,
     "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressUpdateNotice": false,
+        "suppressResultsExplorerNotice": true,
+        "suppressShowKeyBindingsNotice": true,
         "suppressWelcomeNotice": true
-    }
+    },
+    "gitlens.keymap": "none",
+    "gitlens.historyExplorer.enabled": true,
+    "workbench.iconTheme": "vscode-icons"
 }

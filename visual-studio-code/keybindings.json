@@ -23,5 +23,13 @@
   {
     "key": "cmd+t",
     "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "alt+cmd+h",
+    "command": "openInTerminal"
+  },
+  {
+    "key": "shift+cmd+o",
+    "command": "workbench.action.openWorkspaceInNewWindow"
   }
 ]

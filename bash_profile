@@ -51,3 +51,5 @@ echo -e "Working as \033[0;36m$(git_user)\033[0;0m[\033[1;30m$(git_email)\033[0;
 #
 # export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+zsh
