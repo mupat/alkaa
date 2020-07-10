@@ -1,14 +1,9 @@
 #dev environment
-Repo to easily bootstrap a mac or a vagrant box(currently ubuntu).
+Repo to easily bootstrap a mac
 
 ## use on mac
 ```
 ./bootstrap_mac.sh
-```
-
-## use for vagrant
-```bash
-vagrant up
 ```
 
 ## Add new configs or apps
