@@ -50,7 +50,7 @@
   cleanup-force = "!git fp && $(git deleteable-branches | xargs -n 1 git branch -D)"
   alias = "!git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /"
   open = "!open $(git remote-weburl)"
-  pr = "!open $(git remote-weburl)/compare/$(git branch-name)"
+  pr = "!open $(git remote-weburl)/pull/new/$(git branch-name)"
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f

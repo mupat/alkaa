@@ -38,6 +38,9 @@ cecho "deactivated auto open of photo app" $GREEN
 defaults -currentHost write com.apple.iTunes DeviceBackupsDisabled -bool true
 cecho "deactivated auto open of itunes" $GREEN
 
+#allow ios simulator to be used in fullscreen
+defaults write com.apple.iphonesimulator AllowFullscreenMode -bool YES
+
 echo ""
 echo ""
 

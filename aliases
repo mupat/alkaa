@@ -3,15 +3,16 @@
 alias e=exit
 alias g=git
 alias m=make
-alias c=clear
+alias c="code -r"
+
 alias b=brew
-alias a=atom
 alias bc="brew cask"
 alias la="ls -laht"
-alias rb="source ~/.bash_profile"
-alias rz="source ~/.zshrc"
 alias psa="ps aux | grep --color"
 alias fn="find . -iname "
-alias tf="cd ~/development/taxfix"
-alias tfl="cd ~/development/taxfix-local"
+
+alias rb="source ~/.bash_profile"
+alias rz="source ~/.zshrc"
+
+# Development
 alias rs="rails s -b 0.0.0.0 | grep -vE '(^$|asset)'"

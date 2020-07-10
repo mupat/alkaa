@@ -31,5 +31,9 @@
   {
     "key": "shift+cmd+o",
     "command": "workbench.action.openWorkspaceInNewWindow"
+  },
+  {
+    "key": "shift+cmd+t",
+    "command": "workbench.action.newWindowTab"
   }
 ]
