@@ -9,22 +9,16 @@ module.exports = {
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 12,
+    fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: 'SourceCodePro-Medium, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
 
     // font weight for bold characters: 'normal' or 'bold'
     fontWeightBold: 'bold',
-
-    // line height as a relative unit
-    lineHeight: 1,
-
-    // letter spacing as a relative unit
-    letterSpacing: 0,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.8)',
@@ -103,7 +97,7 @@ module.exports = {
     //
     // PowerShell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: '',
+    shell: '/bin/zsh',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
@@ -113,7 +107,7 @@ module.exports = {
     env: {},
 
     // set to `false` for no bell
-    bell: 'SOUND',
+    bell: false,
 
     // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
     copyOnSelect: false,
@@ -123,19 +117,10 @@ module.exports = {
 
     // if `true` (without backticks and without quotes), on right click selected text will be copied or pasted if no
     // selection is present (`true` by default on Windows and disables the context menu feature)
-    quickEdit: false,
-
-    // choose either `'vertical'`, if you want the column mode when Option key is hold during selection (Default)
-    // or `'force'`, if you want to force selection regardless of whether the terminal is in mouse events mode
-    // (inside tmux or vim with mouse mode enabled for example).
-    macOptionSelectionMode: 'vertical',
+    // quickEdit: true,
 
     // URL to custom bell
     // bellSoundURL: 'http://example.com/bell.mp3',
-
-    // Whether to use the WebGL renderer. Set it to false to use canvas-based
-    // rendering (slower, but supports transparent backgrounds)
-    webGLRenderer: true,
 
     // for advanced config flags please refer to https://hyper.is/#cfg
   },
@@ -146,7 +131,13 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [],
+  plugins: [
+    "hyper-search",
+    "hyperlinks",
+    "hyper-snazzy",
+    "hyper-font-smoothing",
+    "hypercwd"
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
