@@ -1,5 +1,4 @@
-#dev environment
-Repo to easily bootstrap a mac
+Dev environment repo to easily bootstrap a mac
 
 ## use on mac
 ```
