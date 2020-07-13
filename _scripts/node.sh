@@ -2,7 +2,7 @@
 source "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../_helper.sh" #load helper
 
 #install node
-cecho "install nvm" $GREEN
+cecho "Install nvm" $GREEN
 git clone https://github.com/creationix/nvm.git $HOME/.nvm
 source $HOME/.nvm/nvm.sh
 
